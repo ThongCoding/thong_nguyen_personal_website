@@ -1,152 +1,284 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Personal Website</title>
+    <title>Thong Nguyen</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="mediaqueries.css" type="text/css" rel="stylesheet" />
   </head>
+
   <body>
-    <img src="images/profile_pic.jpg" alt="Profile Picture" />
-    <h1>Hi! I'm Thong Nguyen. Welcome to my personal website!</h1>
-    <hr />
-    <h2>Education</h2>
-    <ul>
-      <li><h4>Cal Poly Pomona: 2023 - current</h4></li>
-      <li><h4>Santa Ana College: 2021 - 2023</h4></li>
-    </ul>
-    <hr />
-    <h2>Hobby</h2>
-    <h3>Sport</h3>
-    <table>
-      <tr>
-        <th>Badminton</th>
-        <th>Tennis</th>
-        <th>Soccer</th>
-      </tr>
-      <tr>
-        <td>
-          <img src="images/badminton.jpg" alt="badminton" height="300" />
-        </td>
-        <td>
-          <img src="images/tennis.jpg" alt="tennis" height="300" />
-        </td>
-        <td>
-          <img src="images/soccer.jpg" alt="soccer" height="300" />
-        </td>
-      </tr>
-    </table>
-    <h3>Gaming</h3>
-    <table>
-      <tr>
-        <th>League of Legends</th>
-        <th>Teamfight Tatics</th>
-        <th>Genshin Impact</th>
-      </tr>
-      <tr>
-        <td>
-          <img
-            src="images/league_of_legends.jpg"
-            alt="league of legends"
-            height="300"
-          />
-        </td>
-        <td>
-          <img
-            src="images/teamfight_tatics.jpg"
-            alt="teamfight tatics"
-            height="300"
-          />
-        </td>
-        <td>
-          <img
-            src="images/genshin_impact.jpg"
-            alt="genshin impact"
-            height="300"
-          />
-        </td>
-      </tr>
-    </table>
-    <p>*Note: <b>STAY AWAY</b> from those games!</p>
+    <!-- Header Navigation -->
+    <nav id="desktop_nav">
+      <div><img src="Images/Logo_Thong_Nguyen.png" class="logo" /></div>
+      <div>
+        <ul class="nav_links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <hr />
-    <h2>Favorite Songs</h2>
+    <!-- Introduction -->
+    <section id="introduction">
+      <div class="intro_section_profile_pic">
+        <img
+          src="Images/profile_picture.png"
+          alt="My profile picture"
+          class="profile_pic"
+        />
+      </div>
 
-    <div>
-      <table>
-        <tr>
-          <th>Location - by Khalid</th>
-          <th>I Will Go To You Like the First Snow - by AILEE</th>
-          <th>7!! - by Orange</th>
-          <th>Anh Chua Thuong Em Den Vay Dau - by Myra Tran</th>
-        </tr>
-        <tr>
-          <td>
-            <audio controls>
-              <source src="audios/Khalid_Location.mp3" type="audio/mpeg" />
-            </audio>
-          </td>
-          <td>
-            <audio controls>
-              <source
-                src="audios/I_Will_Go_To_You_Like_The_First_Snow.mp3"
-                type="audio/mpeg"
+      <div class="intro_section_text">
+        <p class="intro_section_text_p1">Hello, I'm</p>
+        <h1 class="title">Thong Nguyen</h1>
+        <p class="intro_section_text_p2">Undergraduate Student</p>
+
+        <div class="intro_section_button">
+          <button class="btn" onclick="window.open('Pdf/resume.pdf')">
+            View Resume
+          </button>
+        </div>
+
+        <div id="intro_section_social_icon">
+          <a
+            href="https://www.linkedin.com/in/nguyen-thong-intern/"
+            target="_blank"
+          >
+            <img
+              src="Images/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+          /></a>
+          <a href="https://github.com/ThongCoding" target="_blank">
+            <img src="Images/github.png" alt="My Github profile" class="icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+      <p class="about_text">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section_container">
+        <div class="about_section_picture">
+          <img
+            src="Images/profile_picture.png"
+            alt="about_me picture"
+            class="about_pic"
+          />
+        </div>
+        <div class="about_details_container">
+          <div class="about_containers">
+            <div class="details_container">
+              <img
+                src="Images/experience.png"
+                alt="Experience icon"
+                class="icon"
               />
-            </audio>
-          </td>
-          <td>
-            <audio controls>
-              <source src="audios/7_Orange.mp3" type="audio/mpeg" />
-            </audio>
-          </td>
-          <td>
-            <audio controls>
-              <source
-                src="audios/Anh_Chua_Thuong_Em_Den_Vay_Dau.wav"
-                type="audio/mpeg"
+              <h3>Experience</h3>
+              <p>Teaching Assistant in Computer Science<br />Math Tutor</p>
+            </div>
+            <div class="details_container">
+              <img
+                src="Images/education.png"
+                alt="Education icon"
+                class="icon"
               />
-            </audio>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <hr />
-    <div>
-      <h2>Favorite Movies</h2>
-      <h5>End Game</h5>
-      <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com/embed/0jNvJU52LvU?si=4LVL-0sMG7GA5pDl"
-      >
-      </iframe>
-      <h5>Demon Slayer</h5>
-      <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com/embed/rq1tllAUS1I?si=dhuX5NgzMuKxUwFz"
-      >
-      </iframe>
+              <h3>Education</h3>
+              <p>
+                B.S. in Computer Science (currently pursuing)<br />A.S. Degree
+                in Computer Science
+              </p>
+            </div>
+          </div>
+          <div class="text_container">
+            <p>
+              My name is Thong Nguyen, a computer science major with a strong
+              focus on AI and web development. I'm actively seeking employment
+              opportunities and excited to join a team where I can apply my
+              skills and knowledge to make a meaningful contribution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h5>Jujutsu Kaisen</h5>
-      <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com/embed/pkKu9hLT-t8?si=j7pzXB60PSoKttWd"
-      >
-      </iframe>
-    </div>
-    <hr />
-    <h2>How about you?</h2>
-    <form>
-      <label>Favorite Sports:</label><br />
-      <input type="text" /><br />
-      <label>Favorite Games:</label><br />
-      <input type="text" /><br />
-      <label>Favorite Songs:</label><br />
-      <input type="text" /><br />
-      <label>Favorite Movies:</label><br />
-      <input type="text" /><br />
-    </form>
-    <button>Submit</button>
-    <hr />
-    <a href="my_contact.html" target="_blank"><h6>My Contact</h6></a>
+    <!-- Skills -->
+    <section id="skills">
+      <p class="skills_text">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills_details_container">
+        <div class="skills_containers">
+          <div class="container">
+            <h2 class="skills_sub_title">Programing Languages</h2>
+            <div class="article_container">
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Fundamental</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Fundamental</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Fundamental</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="container">
+            <h2 class="skills_sub_title">Web Development</h2>
+            <div class="article_container">
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <p class="contact_text">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact_info_upper_container">
+        <div class="contact_info_container">
+          <img
+            src="Images/email.png"
+            alt="Email icon"
+            class="icon contact_icon email_icon"
+          />
+          <p>
+            <a href="mailto:thongnguyenstudent@gmail.com"
+              >thongnguyenstudent@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact_info_container">
+          <img
+            src="Images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact_icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/nguyen-thong-intern/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <nav>
+        <div class="nav_links_container">
+          <ul class="nav_links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Thong Nguyen. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
