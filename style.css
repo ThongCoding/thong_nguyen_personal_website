@@ -1,0 +1,321 @@
+/* General */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* DESKTOP NAV */
+
+.logo {
+    width: 20rem;
+}
+
+nav,
+.nav_links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav_links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+/* For all sections*/
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+/* -------------------------- Introduction section ------------------------*/
+#introduction {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+/* PICTURE */
+
+.intro_section_profile_pic{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.profile_pic{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* TEXT */
+
+.intro_section_text{
+    align-self: center;
+    text-align: center;
+}
+
+.intro_section_text p {
+    font-weight: 600;
+}
+
+.intro_section_text_p1 {
+    text-align: center;
+}
+
+
+.intro_section_text_p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+/* BUTTONS */
+
+.intro_section_button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: rgb(53, 53, 53);
+    color: white;
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+/* ICONS */
+
+#intro_section_social_icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* -------------------------- About Me section ------------------------*/
+
+#about {
+    position: relative;
+}
+
+.about_text{
+    text-align: center;
+}
+
+.section_container {
+    gap: 4rem;
+    height: 80%;
+    display: flex;
+}
+
+.about_section_picture {
+    height: 400px;
+    width: 900px;
+    margin: auto 0;
+}
+
+.about_pic {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.about_details_container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about_containers,
+.about_details_container {
+    display: flex;
+}
+
+.details_container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+/* -------------------------- Skill section ------------------------*/
+
+#skills {
+    position: relative;
+}
+
+.skills_text {
+    text-align: center;
+}
+
+.skills_details_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills_containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.skills_sub_title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.article_container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+/* -------------------------- Contact section ------------------------*/
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact_text {
+    text-align: center;
+}
+
+.contact_info_upper_container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: #FFFFFF;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact_info_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact_info_container p {
+    font-size: larger;
+}
+
+.contact_icon {
+    cursor: default;
+}
+
+.email_icon {
+    height: 2.5rem;
+}
+
+/* -------------------------- Footer ------------------------*/
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
